@@ -1,11 +1,21 @@
 import { Link } from "@tanstack/react-router";
-import { type ReactNode } from "react";
+import { Menu, X, Phone } from "lucide-react";
+import { type ReactNode, useState } from "react";
 
 interface MainLayoutProps {
   children: ReactNode;
 }
 
+const navLinks = [
+  { to: "/gabinet", label: "Gabinet" },
+  { to: "/leczenie", label: "Leczenie" },
+  { to: "/galeria", label: "Galeria" },
+  { to: "/kontakt", label: "Kontakt" },
+];
+
 export function MainLayout({ children }: MainLayoutProps) {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
   return (
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -16,43 +26,70 @@ export function MainLayout({ children }: MainLayoutProps) {
               Karodental
             </span>
           </Link>
+
           <div className="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
-            <Link
-              to="/gabinet"
-              className="hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-            >
-              Gabinet
-            </Link>
-            <Link
-              to="/leczenie"
-              className="hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-            >
-              Leczenie
-            </Link>
-            <Link
-              to="/galeria"
-              className="hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-            >
-              Galeria
-            </Link>
-            <Link
-              to="/kontakt"
-              className="hover:text-primary transition-colors"
-              activeProps={{ className: "text-primary" }}
-            >
-              Kontakt
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="hover:text-primary transition-colors"
+                activeProps={{ className: "text-primary" }}
+              >
+                {link.label}
+              </Link>
+            ))}
           </div>
-          <a
-            href="tel:+48226713333"
-            className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/20 transition-all"
-          >
-            Zadzwoń: 22 671 33 33
-          </a>
+
+          <div className="flex items-center gap-3">
+            <a
+              href="tel:+48226713333"
+              className="hidden sm:inline-flex bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/20 transition-all"
+            >
+              Zadzwoń: 22 671 33 33
+            </a>
+            <a
+              href="tel:+48226713333"
+              className="sm:hidden inline-flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground hover:shadow-lg hover:shadow-primary/20 transition-all"
+              aria-label="Zadzwoń do nas"
+            >
+              <Phone className="size-5" />
+            </a>
+            <button
+              type="button"
+              onClick={() => setMobileOpen((prev) => !prev)}
+              className="md:hidden inline-flex size-10 items-center justify-center rounded-full border border-border hover:bg-accent/10 transition-colors"
+              aria-label={mobileOpen ? "Zamknij menu" : "Otwórz menu"}
+              aria-expanded={mobileOpen}
+            >
+              {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
+            </button>
+          </div>
         </div>
+
+        {mobileOpen && (
+          <div className="md:hidden border-t border-border bg-background">
+            <div className="max-w-7xl mx-auto px-6 py-6 space-y-1">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.to}
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-primary transition-colors"
+                  activeProps={{ className: "text-primary" }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+              <a
+                href="tel:+48226713333"
+                className="flex items-center gap-2 py-3 text-sm font-semibold uppercase tracking-wider text-primary"
+              >
+                <Phone className="size-4" />
+                +48 22 671 33 33
+              </a>
+            </div>
+          </div>
+        )}
       </nav>
 
       <main>{children}</main>
