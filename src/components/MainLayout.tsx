@@ -45,7 +45,7 @@ export function MainLayout({ children }: MainLayoutProps) {
               href="tel:+48226713333"
               className="hidden sm:inline-flex bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/20 transition-all"
             >
-              Zadzwoń: 22 671 33 33
+              Zadzwoń
             </a>
             <a
               href="tel:+48226713333"
