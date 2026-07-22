@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { type ReactNode, useState } from "react";
 
+import karoLogo from "@/assets/karologo.png.asset.json";
+
 interface MainLayoutProps {
   children: ReactNode;
 }
@@ -20,11 +22,12 @@ export function MainLayout({ children }: MainLayoutProps) {
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="size-10 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm ring-4 ring-primary/10" />
-            <span className="font-display text-2xl font-extrabold tracking-tighter uppercase">
-              Karodental
-            </span>
+          <Link to="/" className="flex items-center" aria-label="Karodental - strona główna">
+            <img
+              src={karoLogo.url}
+              alt="Karodental - stomatologia rodzinna"
+              className="h-10 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
@@ -98,11 +101,12 @@ export function MainLayout({ children }: MainLayoutProps) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="size-8 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm" />
-                <span className="font-display text-xl font-extrabold tracking-tighter uppercase">
-                  Karodental
-                </span>
+              <div className="mb-8">
+                <img
+                  src={karoLogo.url}
+                  alt="Karodental"
+                  className="h-10 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
                 Twój uśmiech w najlepszych rękach. Profesjonalna opieka stomatologiczna w samym sercu
