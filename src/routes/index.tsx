@@ -24,7 +24,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Nowoczesna stomatologia w przyjaznej atmosferze. Dbamy o zdrowie zębów całej Twojej rodziny.",
+          "Karodental to nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu. Oferujemy kompleksową opiekę stomatologiczną dla dzieci i dorosłych.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

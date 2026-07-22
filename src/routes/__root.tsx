@@ -78,12 +78,16 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Karodental - Stomatologia rodzinna Warszawa Gocław" },
-      { name: "description", content: "Karodental - nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu. Kompleksowa opieka stomatologiczna dla dzieci i dorosłych." },
+      { name: "description", content: "Karodental to nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu. Oferujemy kompleksową opiekę stomatologiczną dla dzieci i dorosłych." },
       { name: "author", content: "Karodental" },
       { property: "og:title", content: "Karodental - Stomatologia rodzinna Warszawa Gocław" },
-      { property: "og:description", content: "Nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu." },
+      { property: "og:description", content: "Karodental to nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu. Oferujemy kompleksową opiekę stomatologiczną dla dzieci i dorosłych." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Karodental - Stomatologia rodzinna Warszawa Gocław" },
+      { name: "twitter:description", content: "Karodental to nowoczesny gabinet stomatologii rodzinnej na warszawskim Gocławiu. Oferujemy kompleksową opiekę stomatologiczną dla dzieci i dorosłych." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24d64846-15a8-4704-9b34-fa3c94a63fee/id-preview-e266763f--6111a1ce-bce3-48a4-8a90-df1f7c27fd47.lovable.app-1784742434434.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/24d64846-15a8-4704-9b34-fa3c94a63fee/id-preview-e266763f--6111a1ce-bce3-48a4-8a90-df1f7c27fd47.lovable.app-1784742434434.png" },
     ],
     links: [
       {
