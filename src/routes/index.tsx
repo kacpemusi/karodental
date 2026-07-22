@@ -80,15 +80,6 @@ function Index() {
                   fetchPriority="high"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-border max-w-[240px]">
-                <div className="flex gap-1 mb-2">
-                  <div className="size-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-[10px] uppercase font-bold text-muted-foreground">
-                    Dostępne terminy
-                  </span>
-                </div>
-                <p className="text-sm font-semibold">Najbliższa wizyta dostępna już jutro o 14:00.</p>
-              </div>
             </div>
           </div>
         </div>
