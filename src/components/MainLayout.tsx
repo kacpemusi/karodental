@@ -21,16 +21,16 @@ export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center shrink-0" aria-label="Karodental - strona główna">
             <img
               src={karoLogo.url}
               alt="Karodental - stomatologia rodzinna"
-              className="h-14 sm:h-16 w-auto"
+              className="h-16 sm:h-20 w-auto"
             />
           </Link>
 
-          <div className="hidden md:flex items-center gap-10 font-heading text-[15px] font-medium lowercase tracking-tight">
+          <div className="hidden md:flex items-center gap-10 font-heading text-[15px] font-medium tracking-tight">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -38,7 +38,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 className="hover:text-primary transition-colors"
                 activeProps={{ className: "text-primary" }}
               >
-                {link.label.toLowerCase()}
+                {link.label}
               </Link>
             ))}
           </div>
@@ -105,7 +105,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <img
                   src={karoLogo.url}
                   alt="Karodental"
-                  className="h-14 w-auto brightness-0 invert"
+                  className="h-16 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
