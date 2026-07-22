@@ -56,16 +56,16 @@ function Index() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/kontakt"
+                  to="/leczenie"
                   className="px-8 py-4 bg-foreground text-background rounded-full font-bold hover:bg-primary transition-colors"
                 >
-                  Umów wizytę online
+                  Sprawdź ofertę
                 </Link>
                 <Link
-                  to="/gabinet"
+                  to="/cennik"
                   className="px-8 py-4 border border-border rounded-full font-bold hover:bg-white transition-colors"
                 >
-                  Poznaj nasz zespół
+                  Cennik usług
                 </Link>
               </div>
             </div>
@@ -79,15 +79,6 @@ function Index() {
                   className="w-full h-full object-cover"
                   fetchPriority="high"
                 />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-border max-w-[240px]">
-                <div className="flex gap-1 mb-2">
-                  <div className="size-2 rounded-full bg-green-500 animate-pulse" />
-                  <span className="text-[10px] uppercase font-bold text-muted-foreground">
-                    Dostępne terminy
-                  </span>
-                </div>
-                <p className="text-sm font-semibold">Najbliższa wizyta dostępna już jutro o 14:00.</p>
               </div>
             </div>
           </div>

@@ -14,6 +14,7 @@ import { Route as LeczenieRouteImport } from './routes/leczenie'
 import { Route as KontaktRouteImport } from './routes/kontakt'
 import { Route as GaleriaRouteImport } from './routes/galeria'
 import { Route as GabinetRouteImport } from './routes/gabinet'
+import { Route as CennikRouteImport } from './routes/cennik'
 import { Route as IndexRouteImport } from './routes/index'
 
 const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
@@ -41,6 +42,11 @@ const GabinetRoute = GabinetRouteImport.update({
   path: '/gabinet',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CennikRoute = CennikRouteImport.update({
+  id: '/cennik',
+  path: '/cennik',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -49,6 +55,7 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/cennik': typeof CennikRoute
   '/gabinet': typeof GabinetRoute
   '/galeria': typeof GaleriaRoute
   '/kontakt': typeof KontaktRoute
@@ -57,6 +64,7 @@ export interface FileRoutesByFullPath {
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/cennik': typeof CennikRoute
   '/gabinet': typeof GabinetRoute
   '/galeria': typeof GaleriaRoute
   '/kontakt': typeof KontaktRoute
@@ -66,6 +74,7 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/cennik': typeof CennikRoute
   '/gabinet': typeof GabinetRoute
   '/galeria': typeof GaleriaRoute
   '/kontakt': typeof KontaktRoute
@@ -76,16 +85,25 @@ export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/cennik'
     | '/gabinet'
     | '/galeria'
     | '/kontakt'
     | '/leczenie'
     | '/sitemap.xml'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/gabinet' | '/galeria' | '/kontakt' | '/leczenie' | '/sitemap.xml'
+  to:
+    | '/'
+    | '/cennik'
+    | '/gabinet'
+    | '/galeria'
+    | '/kontakt'
+    | '/leczenie'
+    | '/sitemap.xml'
   id:
     | '__root__'
     | '/'
+    | '/cennik'
     | '/gabinet'
     | '/galeria'
     | '/kontakt'
@@ -95,6 +113,7 @@ export interface FileRouteTypes {
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CennikRoute: typeof CennikRoute
   GabinetRoute: typeof GabinetRoute
   GaleriaRoute: typeof GaleriaRoute
   KontaktRoute: typeof KontaktRoute
@@ -139,6 +158,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GabinetRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cennik': {
+      id: '/cennik'
+      path: '/cennik'
+      fullPath: '/cennik'
+      preLoaderRoute: typeof CennikRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -151,6 +177,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CennikRoute: CennikRoute,
   GabinetRoute: GabinetRoute,
   GaleriaRoute: GaleriaRoute,
   KontaktRoute: KontaktRoute,
