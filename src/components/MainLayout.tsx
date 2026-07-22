@@ -77,7 +77,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                   key={link.to}
                   to={link.to}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-3 text-sm font-semibold uppercase tracking-wider hover:text-primary transition-colors"
+                  className="block py-3 font-heading text-[15px] font-medium lowercase tracking-tight hover:text-primary transition-colors"
                   activeProps={{ className: "text-primary" }}
                 >
                   {link.label}
