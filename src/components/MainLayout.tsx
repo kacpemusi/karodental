@@ -21,12 +21,12 @@ export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center" aria-label="Karodental - strona główna">
+        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between gap-4">
+          <Link to="/" className="flex items-center shrink-0" aria-label="Karodental - strona główna">
             <img
               src={karoLogo.url}
               alt="Karodental - stomatologia rodzinna"
-              className="h-10 w-auto"
+              className="h-14 sm:h-16 w-auto"
             />
           </Link>
 
@@ -105,7 +105,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <img
                   src={karoLogo.url}
                   alt="Karodental"
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-14 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
