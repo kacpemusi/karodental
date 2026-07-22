@@ -22,11 +22,12 @@ export function MainLayout({ children }: MainLayoutProps) {
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-3">
-            <div className="size-10 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm ring-4 ring-primary/10" />
-            <span className="font-display text-2xl font-extrabold tracking-tighter uppercase">
-              Karodental
-            </span>
+          <Link to="/" className="flex items-center" aria-label="Karodental - strona główna">
+            <img
+              src={karoLogo.url}
+              alt="Karodental - stomatologia rodzinna"
+              className="h-10 w-auto"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
