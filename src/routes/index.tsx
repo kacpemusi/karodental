@@ -56,16 +56,16 @@ function Index() {
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
-                  to="/kontakt"
+                  to="/leczenie"
                   className="px-8 py-4 bg-foreground text-background rounded-full font-bold hover:bg-primary transition-colors"
                 >
-                  Umów wizytę online
+                  Sprawdź ofertę
                 </Link>
                 <Link
-                  to="/gabinet"
+                  to="/cennik"
                   className="px-8 py-4 border border-border rounded-full font-bold hover:bg-white transition-colors"
                 >
-                  Poznaj nasz zespół
+                  Cennik usług
                 </Link>
               </div>
             </div>
