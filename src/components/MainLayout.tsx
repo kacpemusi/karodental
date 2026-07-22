@@ -1,0 +1,136 @@
+import { Link } from "@tanstack/react-router";
+import { type ReactNode } from "react";
+
+interface MainLayoutProps {
+  children: ReactNode;
+}
+
+export function MainLayout({ children }: MainLayoutProps) {
+  return (
+    <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
+      <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <Link to="/" className="flex items-center gap-3">
+            <div className="size-10 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm ring-4 ring-primary/10" />
+            <span className="font-display text-2xl font-extrabold tracking-tighter uppercase">
+              Karodental
+            </span>
+          </Link>
+          <div className="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
+            <Link
+              to="/gabinet"
+              className="hover:text-primary transition-colors"
+              activeProps={{ className: "text-primary" }}
+            >
+              Gabinet
+            </Link>
+            <Link
+              to="/leczenie"
+              className="hover:text-primary transition-colors"
+              activeProps={{ className: "text-primary" }}
+            >
+              Leczenie
+            </Link>
+            <Link
+              to="/galeria"
+              className="hover:text-primary transition-colors"
+              activeProps={{ className: "text-primary" }}
+            >
+              Galeria
+            </Link>
+            <Link
+              to="/kontakt"
+              className="hover:text-primary transition-colors"
+              activeProps={{ className: "text-primary" }}
+            >
+              Kontakt
+            </Link>
+          </div>
+          <a
+            href="tel:+48226713333"
+            className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-sm font-semibold hover:shadow-lg hover:shadow-primary/20 transition-all"
+          >
+            Zadzwoń: 22 671 33 33
+          </a>
+        </div>
+      </nav>
+
+      <main>{children}</main>
+
+      <footer className="bg-foreground text-background py-24">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
+            <div className="lg:col-span-1">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="size-8 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm" />
+                <span className="font-display text-xl font-extrabold tracking-tighter uppercase">
+                  Karodental
+                </span>
+              </div>
+              <p className="text-background/60 text-sm leading-relaxed mb-6">
+                Twój uśmiech w najlepszych rękach. Profesjonalna opieka stomatologiczna w samym sercu
+                Gocławia.
+              </p>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">
+                Kontakt
+              </h4>
+              <div className="space-y-4">
+                <p className="text-lg font-medium">+48 22 671 33 33</p>
+                <p className="text-lg font-medium">+48 22 671 99 93</p>
+                <p className="text-sm text-background/60">gabinet@karodental.pl</p>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">
+                Lokalizacja
+              </h4>
+              <p className="text-lg font-medium">ul. Bora-Komorowskiego 4/15</p>
+              <p className="text-sm text-background/60">03-982 Warszawa (Gocław)</p>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">
+                Godziny
+              </h4>
+              <div className="text-sm space-y-2 text-background/80">
+                <div className="flex justify-between">
+                  <span>Pon - Pt:</span>
+                  <span>08:00 - 20:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Sobota:</span>
+                  <span>09:00 - 14:00</span>
+                </div>
+                <div className="flex justify-between">
+                  <span>Niedziela:</span>
+                  <span>Zamknięte</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="pt-12 border-t border-background/10 flex flex-col md:flex-row justify-between gap-6 text-[10px] font-bold uppercase tracking-widest text-background/30">
+            <p>© {new Date().getFullYear()} Karodental Warszawa. Wszystkie prawa zastrzeżone.</p>
+            <div className="flex gap-8">
+              <Link to="/" className="hover:text-background transition-colors">
+                Strona główna
+              </Link>
+              <Link to="/gabinet" className="hover:text-background transition-colors">
+                Gabinet
+              </Link>
+              <Link to="/leczenie" className="hover:text-background transition-colors">
+                Leczenie
+              </Link>
+              <Link to="/kontakt" className="hover:text-background transition-colors">
+                Kontakt
+              </Link>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+}
