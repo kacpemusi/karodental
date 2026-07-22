@@ -30,7 +30,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             />
           </Link>
 
-          <div className="hidden md:flex items-center gap-10 text-sm font-semibold uppercase tracking-wider">
+          <div className="hidden md:flex items-center gap-10 font-heading text-[15px] font-medium lowercase tracking-tight">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
@@ -38,7 +38,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 className="hover:text-primary transition-colors"
                 activeProps={{ className: "text-primary" }}
               >
-                {link.label}
+                {link.label.toLowerCase()}
               </Link>
             ))}
           </div>
