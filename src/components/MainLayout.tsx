@@ -7,9 +7,9 @@ interface MainLayoutProps {
 }
 
 const navLinks = [
-  { to: "/gabinet", label: "Gabinet" },
-  { to: "/leczenie", label: "Leczenie" },
-  { to: "/galeria", label: "Galeria" },
+  { to: "/cennik", label: "Cennik usług" },
+  { to: "/leczenie", label: "Oferta" },
+  { to: "/gabinet", label: "O nas" },
   { to: "/kontakt", label: "Kontakt" },
 ];
 
