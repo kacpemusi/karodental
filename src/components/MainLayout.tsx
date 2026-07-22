@@ -101,11 +101,12 @@ export function MainLayout({ children }: MainLayoutProps) {
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
             <div className="lg:col-span-1">
-              <div className="flex items-center gap-3 mb-8">
-                <div className="size-8 bg-gradient-to-br from-primary to-accent rotate-45 rounded-sm" />
-                <span className="font-display text-xl font-extrabold tracking-tighter uppercase">
-                  Karodental
-                </span>
+              <div className="mb-8">
+                <img
+                  src={karoLogo.url}
+                  alt="Karodental"
+                  className="h-10 w-auto brightness-0 invert"
+                />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
                 Twój uśmiech w najlepszych rękach. Profesjonalna opieka stomatologiczna w samym sercu
