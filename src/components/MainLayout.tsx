@@ -105,7 +105,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <img
                   src={karoLogo.url}
                   alt="Karodental"
-                  className="h-10 w-auto brightness-0 invert"
+                  className="h-14 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
