@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { type ReactNode, useState } from "react";
 
-import karoLogo from "@/assets/karologo.png.asset.json";
+import karoLogo from "@/assets/karologo-hires.png.asset.json";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -77,7 +77,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                   key={link.to}
                   to={link.to}
                   onClick={() => setMobileOpen(false)}
-                  className="block py-3 font-heading text-[15px] font-medium lowercase tracking-tight hover:text-primary transition-colors"
+                  className="block py-3 font-heading text-[15px] font-medium tracking-tight hover:text-primary transition-colors"
                   activeProps={{ className: "text-primary" }}
                 >
                   {link.label}
@@ -129,8 +129,16 @@ export function MainLayout({ children }: MainLayoutProps) {
               <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">
                 Lokalizacja
               </h4>
-              <p className="text-lg font-medium">ul. Bora-Komorowskiego 4/15</p>
+              <p className="text-lg font-medium">ul. Bora-Komorowskiego 22</p>
               <p className="text-sm text-background/60">03-982 Warszawa (Gocław)</p>
+              <a
+                href="https://share.google/J6Uq0MXcjwMx3CJ5W"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 text-sm text-accent hover:text-background transition-colors underline underline-offset-4"
+              >
+                Zobacz na mapie →
+              </a>
             </div>
 
             <div>
