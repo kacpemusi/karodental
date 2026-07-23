@@ -91,7 +91,7 @@ function Gabinet() {
           </div>
 
           <div className="mb-16">
-            <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">Nasz zespół</h2>
+            <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">Poznaj nasz zespół</h2>
             <p className="text-muted-foreground max-w-2xl">
               Doświadczeni i przyjaźni specjaliści, którzy z pasją podchodzą do każdego pacjenta.
             </p>
@@ -125,6 +125,25 @@ function Gabinet() {
               </div>
               <h3 className="font-display text-xl font-extrabold">Dr Anna Nowak</h3>
               <p className="text-sm text-muted-foreground">Stomatologia dziecięca i ortodoncja</p>
+            </div>
+          </div>
+
+          <div className="mt-32">
+            <div className="mb-10">
+              <h2 className="font-display text-4xl font-extrabold tracking-tight mb-4">
+                Wybrane certyfikaty naszych lekarzy
+              </h2>
+              <p className="text-muted-foreground max-w-2xl">
+                Stale poszerzamy wiedzę i umiejętności, uczestnicząc w kursach i szkoleniach w Polsce i za granicą.
+              </p>
+            </div>
+            <div className="rounded-3xl overflow-hidden bg-white border border-border shadow-sm p-4 md:p-8">
+              <img
+                src={certyfikaty.url}
+                alt="Wybrane certyfikaty zespołu Karodental"
+                loading="lazy"
+                className="w-full h-auto"
+              />
             </div>
           </div>
         </div>
