@@ -30,7 +30,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             />
           </Link>
 
-          <div className="hidden md:flex items-center gap-10 font-heading text-[15px] font-medium tracking-tight">
+          <div className="hidden md:flex items-center gap-10 font-heading text-[15px] md:text-base lg:text-lg font-medium tracking-tight">
             {navLinks.map((link) => (
               <Link
                 key={link.to}
