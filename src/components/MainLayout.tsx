@@ -129,8 +129,16 @@ export function MainLayout({ children }: MainLayoutProps) {
               <h4 className="text-xs font-bold uppercase tracking-widest text-accent mb-6">
                 Lokalizacja
               </h4>
-              <p className="text-lg font-medium">ul. Bora-Komorowskiego 4/15</p>
+              <p className="text-lg font-medium">ul. Bora-Komorowskiego 22</p>
               <p className="text-sm text-background/60">03-982 Warszawa (Gocław)</p>
+              <a
+                href="https://share.google/J6Uq0MXcjwMx3CJ5W"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-3 text-sm text-accent hover:text-background transition-colors underline underline-offset-4"
+              >
+                Zobacz na mapie →
+              </a>
             </div>
 
             <div>
