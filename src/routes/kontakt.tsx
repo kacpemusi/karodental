@@ -63,10 +63,39 @@ function Kontakt() {
               <div>
                 <h2 className="font-display text-2xl font-extrabold mb-6">Adres</h2>
                 <p className="text-lg text-muted-foreground">
-                  ul. Bora-Komorowskiego 4/15
+                  ul. Bora-Komorowskiego 22
                   <br />
                   03-982 Warszawa (Gocław)
                 </p>
+                <a
+                  href="https://share.google/J6Uq0MXcjwMx3CJ5W"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block mt-3 text-primary hover:text-accent transition-colors underline underline-offset-4"
+                >
+                  Zobacz na Google Maps →
+                </a>
+              </div>
+
+              <div>
+                <h2 className="font-display text-2xl font-extrabold mb-6">Dojazd</h2>
+                <div className="space-y-4 text-muted-foreground">
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Autobus</p>
+                    <p>
+                      Przystanek <span className="font-medium text-foreground">Bora-Komorowskiego</span>
+                    </p>
+                    <p className="text-sm mt-1">
+                      Linie: 117, 147, 148, 168, 213, 219, 411, 507, 509, E-1
+                    </p>
+                  </div>
+                  <div>
+                    <p className="font-semibold text-foreground mb-1">Parking</p>
+                    <p className="text-sm">
+                      W okolicy gabinetu dostępne są bezpłatne miejsca parkingowe.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               <div>
