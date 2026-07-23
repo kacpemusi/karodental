@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { type ReactNode, useState } from "react";
 
-import karoLogo from "@/assets/karologo-hires.png.asset.json";
+import karoLogo from "@/assets/karologo-v3.png.asset.json";
 
 interface MainLayoutProps {
   children: ReactNode;
