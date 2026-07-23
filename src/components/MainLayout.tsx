@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { type ReactNode, useState } from "react";
 
-import karoLogo from "@/assets/karologo-hires.png.asset.json";
+import karoLogo from "@/assets/karologo-v3.png.asset.json";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -21,12 +21,12 @@ export function MainLayout({ children }: MainLayoutProps) {
   return (
     <div className="min-h-screen bg-background font-body text-foreground selection:bg-accent/30">
       <nav className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-        <div className="max-w-7xl mx-auto px-6 h-28 flex items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-6 h-32 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center shrink-0" aria-label="Karodental - strona główna">
             <img
               src={karoLogo.url}
               alt="Karodental - stomatologia rodzinna"
-              className="h-16 sm:h-20 w-auto"
+              className="h-20 sm:h-28 w-auto"
             />
           </Link>
 
@@ -105,7 +105,7 @@ export function MainLayout({ children }: MainLayoutProps) {
                 <img
                   src={karoLogo.url}
                   alt="Karodental"
-                  className="h-16 w-auto brightness-0 invert"
+                  className="h-24 w-auto brightness-0 invert"
                 />
               </div>
               <p className="text-background/60 text-sm leading-relaxed mb-6">
