@@ -4,6 +4,7 @@ import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
+import certyfikaty from "@/assets/certyfikaty.png.asset.json";
 
 export const Route = createFileRoute("/gabinet")({
   component: Gabinet,
