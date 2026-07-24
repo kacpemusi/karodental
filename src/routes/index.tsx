@@ -220,7 +220,7 @@ function Index() {
               <div className="mt-12 pt-12 border-t border-border">
                 <div className="flex items-center gap-6">
                   <div>
-                    <p className="font-display text-3xl font-extrabold text-primary">15+</p>
+                    <p className="font-display text-3xl font-extrabold text-primary">30+</p>
                     <p className="text-xs font-bold uppercase tracking-widest">Lat doświadczenia</p>
                   </div>
                   <div className="w-px h-12 bg-border" />
