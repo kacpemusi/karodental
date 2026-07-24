@@ -198,7 +198,7 @@ function Cennik() {
           </div>
 
           <div className="mt-16 rounded-3xl border border-border bg-muted/30 p-8 md:p-10">
-            <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+            <p className="text-sm md:text-base font-bold text-foreground leading-relaxed">
               Podane ceny mają charakter poglądowy i nie stanowią oferty handlowej w rozumieniu art. 66
               §1 Kodeksu cywilnego. Ostateczna wycena usługi może się różnić i jest ustalana
               indywidualnie.
