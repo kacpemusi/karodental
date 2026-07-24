@@ -14,7 +14,7 @@ export const Route = createFileRoute("/gabinet")({
       {
         name: "description",
         content:
-          "Poznaj gabinet Karodental na warszawskim Gocławiu. 15 lat doświadczenia w kompleksowej opiece stomatologicznej dla dzieci i dorosłych.",
+          "Poznaj gabinet Karodental na warszawskim Gocławiu. 30+ lat doświadczenia w kompleksowej opiece stomatologicznej dla dzieci i dorosłych.",
       },
       { property: "og:title", content: "O nas - Karodental Warszawa Gocław" },
       {
@@ -41,8 +41,8 @@ function Gabinet() {
               Gabinet stomatologiczny z ludzkim podejściem
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Od 15 lat tworzymy miejsce, w którym nowoczesne technologie spotykają się z empatią i
-              troską o każdego pacjenta.
+              30+ lat doświadczenia w stomatologii rodzinnej. Tworzymy miejsce, w którym nowoczesne
+              technologie spotykają się z empatią i troską o każdego pacjenta.
             </p>
           </div>
 
