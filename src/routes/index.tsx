@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 
 import { MainLayout } from "@/components/MainLayout";
-import heroClinic from "@/assets/hero-clinic.jpg";
+import heroSmile from "@/assets/hero-smile.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
 
@@ -72,10 +72,10 @@ function Index() {
             <div className="relative fade-up" style={{ animationDelay: "200ms" }}>
               <div className="w-full aspect-square bg-stone-200 rounded-[40px] shadow-2xl overflow-hidden outline-1 -outline-offset-1 outline-black/5">
                 <img
-                  src={heroClinic}
-                  alt="Nowoczesny gabinet stomatologiczny Karodental na Gocławiu"
-                  width={1200}
-                  height={1200}
+                  src={heroSmile}
+                  alt="Uśmiechnięta pacjentka Karodental z pięknym, zdrowym uśmiechem"
+                  width={1024}
+                  height={1024}
                   className="w-full h-full object-cover"
                   fetchPriority="high"
                 />
