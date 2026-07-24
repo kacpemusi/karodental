@@ -146,13 +146,25 @@ function Gabinet() {
                 Stale poszerzamy wiedzę i umiejętności, uczestnicząc w kursach i szkoleniach w Polsce i za granicą.
               </p>
             </div>
-            <div className="rounded-3xl overflow-hidden bg-white border border-border shadow-sm p-4 md:p-8">
-              <img
-                src={certyfikaty.url}
-                alt="Wybrane certyfikaty zespołu Karodental"
-                loading="lazy"
-                className="w-full h-auto"
-              />
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {certificates.map((cert) => (
+                <a
+                  key={cert.src}
+                  href={cert.src}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:shadow-lg transition-shadow"
+                >
+                  <div className="aspect-[3/4] overflow-hidden bg-stone-50">
+                    <img
+                      src={cert.src}
+                      alt={cert.alt}
+                      loading="lazy"
+                      className="w-full h-full object-contain p-4 group-hover:scale-[1.02] transition-transform duration-500"
+                    />
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
         </div>
