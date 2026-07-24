@@ -4,7 +4,15 @@ import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
-import certyfikaty from "@/assets/certyfikaty.png.asset.json";
+import cer1 from "@/assets/cer1.jpg.asset.json";
+import cer2 from "@/assets/cer2.jpg.asset.json";
+import cer3 from "@/assets/cer3.jpg.asset.json";
+
+const certificates = [
+  { src: cer1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku" },
+  { src: cer2.url, alt: "Dyplom specjalisty w dziedzinie stomatologii dziecięcej - CEM Łódź" },
+  { src: cer3.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej" },
+];
 
 export const Route = createFileRoute("/gabinet")({
   component: Gabinet,
