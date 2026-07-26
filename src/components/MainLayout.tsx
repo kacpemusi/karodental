@@ -131,14 +131,19 @@ export function MainLayout({ children }: MainLayoutProps) {
               </h4>
               <p className="text-lg font-medium">ul. Bora-Komorowskiego 22</p>
               <p className="text-sm text-background/60">03-982 Warszawa (Gocław)</p>
-              <a
-                href="https://maps.app.goo.gl/1NFrNePiDpwvs7sj9"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-3 text-sm text-accent hover:text-background transition-colors underline underline-offset-4"
-              >
-                Zobacz na mapie →
-              </a>
+              <div className="mt-4 rounded-2xl overflow-hidden border border-background/10">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.99330397788!2d21.09155487558482!3d52.22533945800491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd831ea21743%3A0xdd6c9594ce5dfa43!2sKarodental!5e0!3m2!1spl!2spl!4v1785064149596!5m2!1spl!2spl"
+                  width="100%"
+                  height="180"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  title="Karodental na mapie Google"
+                  className="w-full"
+                />
+              </div>
             </div>
 
             <div>
