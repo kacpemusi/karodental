@@ -1,17 +1,33 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
+import { X } from "lucide-react";
 
 import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
-import cer1 from "@/assets/cer1.jpg.asset.json";
-import cer2 from "@/assets/cer2.jpg.asset.json";
-import cer3 from "@/assets/cer3.jpg.asset.json";
+import cert1 from "@/assets/cert-1.jpg.asset.json";
+import cert2 from "@/assets/cert-2.jpg.asset.json";
+import cert3 from "@/assets/cert-3.jpg.asset.json";
+import cert4 from "@/assets/cert-4.jpg.asset.json";
+import cert5 from "@/assets/cert-5.jpg.asset.json";
+import cert6 from "@/assets/cert-6.jpg.asset.json";
+import cert7 from "@/assets/cert-7.jpg.asset.json";
+import cert8 from "@/assets/cert-8.jpg.asset.json";
+import cert9 from "@/assets/cert-9.jpg.asset.json";
+import cert10 from "@/assets/cert-10.jpg.asset.json";
 
 const certificates = [
-  { src: cer1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku" },
-  { src: cer2.url, alt: "Dyplom specjalisty w dziedzinie stomatologii dziecięcej - CEM Łódź" },
-  { src: cer3.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej" },
+  { src: cert1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku (2009)" },
+  { src: cert2.url, alt: "Dyplom specjalisty stomatologii dziecięcej - CEM Łódź (2004)" },
+  { src: cert3.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej (1999)" },
+  { src: cert4.url, alt: "Certyfikat kursu ortodontycznego - Trachem, prof. Bernardo Garcia (2011)" },
+  { src: cert5.url, alt: "Certyfikat uczestnictwa - Sympozjum Stomatologii Amerykańskiej (2003)" },
+  { src: cert6.url, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer (2005)" },
+  { src: cert7.url, alt: "Zaświadczenie - II sesja IAO w Polsce (2008)" },
+  { src: cert8.url, alt: "Zaświadczenie - Ortodoncja Rondeau Seminars, cz. I (2007)" },
+  { src: cert9.url, alt: "Zaświadczenie - Pomorska Akademia Medyczna, stomatologia dziecięca (2003)" },
+  { src: cert10.url, alt: "Certyfikat - II Gdańskie Forum Stomatologiczne PTS (2003)" },
 ];
 
 export const Route = createFileRoute("/gabinet")({
@@ -37,6 +53,22 @@ export const Route = createFileRoute("/gabinet")({
 });
 
 function Gabinet() {
+  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(null);
+
+  useEffect(() => {
+    if (!lightbox) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [lightbox]);
+
   return (
     <MainLayout>
       <section className="pt-20 pb-32">
@@ -148,12 +180,11 @@ function Gabinet() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {certificates.map((cert) => (
-                <a
+                <button
                   key={cert.src}
-                  href={cert.src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:shadow-lg transition-shadow"
+                  type="button"
+                  onClick={() => setLightbox(cert)}
+                  className="group block rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:shadow-lg transition-shadow text-left cursor-zoom-in"
                 >
                   <div className="aspect-[3/4] overflow-hidden bg-stone-50">
                     <img
@@ -163,12 +194,37 @@ function Gabinet() {
                       className="w-full h-full object-contain p-4 group-hover:scale-[1.02] transition-transform duration-500"
                     />
                   </div>
-                </a>
+                </button>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={lightbox.alt}
+          onClick={() => setLightbox(null)}
+          className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-in fade-in duration-200"
+        >
+          <button
+            type="button"
+            onClick={() => setLightbox(null)}
+            aria-label="Zamknij"
+            className="absolute top-4 right-4 size-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+          >
+            <X className="size-6" />
+          </button>
+          <img
+            src={lightbox.src}
+            alt={lightbox.alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl cursor-default"
+          />
+        </div>
+      )}
     </MainLayout>
   );
 }
