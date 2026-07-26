@@ -180,12 +180,11 @@ function Gabinet() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {certificates.map((cert) => (
-                <a
+                <button
                   key={cert.src}
-                  href={cert.src}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:shadow-lg transition-shadow"
+                  type="button"
+                  onClick={() => setLightbox(cert)}
+                  className="group block rounded-2xl overflow-hidden bg-white border border-border shadow-sm hover:shadow-lg transition-shadow text-left cursor-zoom-in"
                 >
                   <div className="aspect-[3/4] overflow-hidden bg-stone-50">
                     <img
@@ -195,12 +194,37 @@ function Gabinet() {
                       className="w-full h-full object-contain p-4 group-hover:scale-[1.02] transition-transform duration-500"
                     />
                   </div>
-                </a>
+                </button>
               ))}
             </div>
           </div>
         </div>
       </section>
+
+      {lightbox && (
+        <div
+          role="dialog"
+          aria-modal="true"
+          aria-label={lightbox.alt}
+          onClick={() => setLightbox(null)}
+          className="fixed inset-0 z-[100] bg-black/85 backdrop-blur-sm flex items-center justify-center p-4 sm:p-8 animate-in fade-in duration-200"
+        >
+          <button
+            type="button"
+            onClick={() => setLightbox(null)}
+            aria-label="Zamknij"
+            className="absolute top-4 right-4 size-11 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-colors"
+          >
+            <X className="size-6" />
+          </button>
+          <img
+            src={lightbox.src}
+            alt={lightbox.alt}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl cursor-default"
+          />
+        </div>
+      )}
     </MainLayout>
   );
 }
