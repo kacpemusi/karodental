@@ -133,7 +133,8 @@ export function MainLayout({ children }: MainLayoutProps) {
               <p className="text-sm text-background/60">03-982 Warszawa (Gocław)</p>
               <a
                 href="https://maps.app.goo.gl/1NFrNePiDpwvs7sj9"
-                rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer external"
                 className="inline-flex mt-4 text-sm font-semibold text-accent hover:text-background transition-colors"
               >
                 Zobacz na Google Maps →
