@@ -16,6 +16,16 @@ import cert7 from "@/assets/cert-7.jpg.asset.json";
 import cert8 from "@/assets/cert-8.jpg.asset.json";
 import cert9 from "@/assets/cert-9.jpg.asset.json";
 import cert10 from "@/assets/cert-10.jpg.asset.json";
+import cert11 from "@/assets/cert-11.jpg.asset.json";
+import cert12 from "@/assets/cert-12.jpg.asset.json";
+import cert13 from "@/assets/cert-13.jpg.asset.json";
+import cert14 from "@/assets/cert-14.jpg.asset.json";
+import cert15 from "@/assets/cert-15.jpg.asset.json";
+import cert16 from "@/assets/cert-16.jpg.asset.json";
+import cert17 from "@/assets/cert-17.jpg.asset.json";
+import cert18 from "@/assets/cert-18.jpg.asset.json";
+import cert19 from "@/assets/cert-19.jpg.asset.json";
+import cert20 from "@/assets/cert-20.jpg.asset.json";
 
 const certificates = [
   { src: cert1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku (2009)" },
@@ -28,7 +38,18 @@ const certificates = [
   { src: cert8.url, alt: "Zaświadczenie - Ortodoncja Rondeau Seminars, cz. I (2007)" },
   { src: cert9.url, alt: "Zaświadczenie - Pomorska Akademia Medyczna, stomatologia dziecięca (2003)" },
   { src: cert10.url, alt: "Certyfikat - II Gdańskie Forum Stomatologiczne PTS (2003)" },
+  { src: cert11.url, alt: "Certyfikat - szkolenie z zaawansowanych technik mezoterapii, Croma (2010)" },
+  { src: cert12.url, alt: "Dyplom - szkolenie Stany nagłe. Pierwsza pomoc w gabinecie stomatologicznym (2009)" },
+  { src: cert13.url, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii (2006)" },
+  { src: cert14.url, alt: "Certyfikat International Association for Orthodontics - UNO-DENTAL (2008)" },
+  { src: cert15.url, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów (2009)" },
+  { src: cert16.url, alt: "Certyfikat - Traumatologia zębów u dzieci i młodzieży, UM w Łodzi (2004)" },
+  { src: cert17.url, alt: "Zaświadczenie Trachem - kurs ortodontyczny dr Larry Brown, sesja II (2010)" },
+  { src: cert18.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej - Grzegorz Gumiężny (1999)" },
+  { src: cert19.url, alt: "Dyplom specjalisty w dziedzinie protetyka stomatologiczna - CEM Łódź (2004)" },
+  { src: cert20.url, alt: "Certyfikat - I Kongres Implantologiczny Denon Dental, BEGO (2008)" },
 ];
+
 
 export const Route = createFileRoute("/gabinet")({
   component: Gabinet,
