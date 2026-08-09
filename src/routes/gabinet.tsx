@@ -73,6 +73,13 @@ const certificates = [
   { src: cert28.url, alt: "Certyfikat - IV Międzynarodowy Kongres Polskiego Stowarzyszenia Implantologicznego, Spała (2006)" },
   { src: cert29.url, alt: "Certyfikat - Sympozjum Stomatologii Amerykańskiej, Grzegorz Gumiężny (2003)" },
   { src: cert30.url, alt: "Certificate - 13th DENTSPLY Friadent World Symposium, Berlin (2008)" },
+  { src: cert31.url, alt: "Dyplom - XIII Naukowo-Szkoleniowe Sympozjum Lekarzy Stomatologów w Zakopanem, Grzegorz Gumiężny (2004)" },
+  { src: cert32.url, alt: "Certyfikat - Maraton Implantologii Praktycznej, techniki laboratoryjne w pracach na implantach (2007)" },
+  { src: cert33.url, alt: "Certification - Attachment for traditional prostheses and implant, Rhein83 / Holtrade (2003)" },
+  { src: cert34.url, alt: "Certyfikat - 2. Evident Success Congress Warsaw, Red & White Esthetic (2007)" },
+  { src: cert35.url, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessence (2008)" },
+  { src: cert36.url, alt: "Certyfikat - Forum Implantologii OSTEOPLANT, Poznań (2005)" },
+  { src: cert37.url, alt: "Certyfikat - X Toruńska Konferencja Stomatologiczna EXPODENT 2004, Beata Prządka-Gumiężna" },
 ];
 
 
