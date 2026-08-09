@@ -57,6 +57,15 @@ const certificates = [
   { src: cert18.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej - Grzegorz Gumiężny (1999)" },
   { src: cert19.url, alt: "Dyplom specjalisty w dziedzinie protetyka stomatologiczna - CEM Łódź (2004)" },
   { src: cert20.url, alt: "Certyfikat - I Kongres Implantologiczny Denon Dental, BEGO (2008)" },
+  { src: cert22.url, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer, Grzegorz Gumiężny (2005)" },
+  { src: cert23.url, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessenz (2007)" },
+  { src: cert24.url, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów, Białowieża (2009)" },
+  { src: cert25.url, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii, Grzegorz Gumiężny (2006)" },
+  { src: cert26.url, alt: "Certificate - Osteologia w Warszawie 2006, regeneracja i odbudowa kości" },
+  { src: cert27.url, alt: "Certificate - ANKYLOS Implant System, DENTSPLY Friadent, Niemcy (2007)" },
+  { src: cert28.url, alt: "Certyfikat - IV Międzynarodowy Kongres Polskiego Stowarzyszenia Implantologicznego, Spała (2006)" },
+  { src: cert29.url, alt: "Certyfikat - Sympozjum Stomatologii Amerykańskiej, Grzegorz Gumiężny (2003)" },
+  { src: cert30.url, alt: "Certificate - 13th DENTSPLY Friadent World Symposium, Berlin (2008)" },
 ];
 
 
