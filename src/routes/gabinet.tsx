@@ -191,34 +191,83 @@ function Gabinet() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="group">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
                   src={team01}
-                  alt="Lekarz stomatolog Karodental"
+                  alt="Dr n. med. Beata Prządka - Gumiężna"
                   width={704}
                   height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <h3 className="font-display text-xl font-extrabold">Dr Karolina Kowalska</h3>
-              <p className="text-sm text-muted-foreground">Stomatolog zachowawczy i estetyczny</p>
+              <h3 className="font-display text-xl font-extrabold">Dr n. med. Beata Prządka - Gumiężna</h3>
+              <p className="text-sm text-muted-foreground">ortodontka, specjalista stomatologii dziecięcej</p>
             </div>
-            <div className="group">
+
+            <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-300 mb-6">
                 <img
                   src={team02}
-                  alt="Lekarz stomatolog Karodental z pacjentem"
+                  alt="Dr n. med. Grzegorz Gumiężny"
                   width={704}
                   height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <h3 className="font-display text-xl font-extrabold">Dr Anna Nowak</h3>
-              <p className="text-sm text-muted-foreground">Stomatologia dziecięca i ortodoncja</p>
+              <h3 className="font-display text-xl font-extrabold">Dr n. med. Grzegorz Gumiężny</h3>
+              <p className="text-sm text-muted-foreground">specjalista protetyki stomatologicznej</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-accent mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">MM</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Małgorzata Matuszewska</h3>
+              <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-primary mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">JG</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Justyna Gorgol - Łajca</h3>
+              <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-primary/80 to-accent/80 mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">JG</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Julia Gumiężna</h3>
+              <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent/80 to-primary/80 mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">PS</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Paweł Stasiatsko</h3>
+              <p className="text-sm text-muted-foreground">specjalista chirurgii stomatologicznej</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-primary to-primary/60 mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">MB</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Marta Breczko</h3>
+              <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
+            </div>
+
+            <div className="group text-center">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-accent/60 mb-6 flex items-center justify-center">
+                <span className="font-display text-6xl font-extrabold text-primary-foreground">AC</span>
+              </div>
+              <h3 className="font-display text-xl font-extrabold">Dr n. med. Agnieszka Chomicz</h3>
+              <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
             </div>
           </div>
 
