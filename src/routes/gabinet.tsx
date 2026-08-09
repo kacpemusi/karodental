@@ -35,6 +35,13 @@ import cert27 from "@/assets/cert27.jpg.asset.json";
 import cert28 from "@/assets/cert28.jpg.asset.json";
 import cert29 from "@/assets/cert29.jpg.asset.json";
 import cert30 from "@/assets/cert30.jpg.asset.json";
+import cert31 from "@/assets/cert31.jpg.asset.json";
+import cert32 from "@/assets/cert32.jpg.asset.json";
+import cert33 from "@/assets/cert33.jpg.asset.json";
+import cert34 from "@/assets/cert34.jpg.asset.json";
+import cert35 from "@/assets/cert35.jpg.asset.json";
+import cert36 from "@/assets/cert36.jpg.asset.json";
+import cert37 from "@/assets/cert37.jpg.asset.json";
 
 const certificates = [
   { src: cert1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku (2009)" },
