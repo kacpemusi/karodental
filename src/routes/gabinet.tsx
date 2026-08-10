@@ -197,10 +197,8 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={team01}
+                  src={beataPrzadka.url}
                   alt="Dr n. med. Beata Prządka - Gumiężna"
-                  width={704}
-                  height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -212,10 +210,8 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-300 mb-6">
                 <img
-                  src={team02}
+                  src={grzegorzGumiezny.url}
                   alt="Dr n. med. Grzegorz Gumiężny"
-                  width={704}
-                  height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -233,8 +229,13 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-primary mb-6 flex items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-primary-foreground">JG</span>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
+                <img
+                  src={justynaGorgol.url}
+                  alt="Justyna Gorgol - Łajca"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-xl font-extrabold">Justyna Gorgol - Łajca</h3>
               <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
