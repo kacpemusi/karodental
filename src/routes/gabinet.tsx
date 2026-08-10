@@ -282,8 +282,13 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-accent/60 mb-6 flex items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-primary-foreground">AC</span>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
+                <img
+                  src={agnieszkaChomicz.url}
+                  alt="Dr n. med. Agnieszka Chomicz"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-xl font-extrabold">Dr n. med. Agnieszka Chomicz</h3>
               <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
