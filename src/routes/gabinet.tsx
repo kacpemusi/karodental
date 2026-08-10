@@ -248,14 +248,14 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-100 mb-6">
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
                   src={pawelStasiatsko.url}
                   alt="Paweł Stasiatsko"
                   width={704}
                   height={944}
                   loading="lazy"
-                  className="w-full h-full object-contain group-hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <h3 className="font-display text-xl font-extrabold">Paweł Stasiatsko</h3>
