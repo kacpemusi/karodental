@@ -6,6 +6,7 @@ import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
+import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg.asset.json";
 import cert1 from "@/assets/cert-1.jpg.asset.json";
 import cert2 from "@/assets/cert-2.jpg.asset.json";
 import cert3 from "@/assets/cert-3.jpg.asset.json";
