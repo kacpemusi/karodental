@@ -6,6 +6,7 @@ import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
 import team01 from "@/assets/team-01.jpg";
 import team02 from "@/assets/team-02.jpg";
+import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg.asset.json";
 import cert1 from "@/assets/cert-1.jpg.asset.json";
 import cert2 from "@/assets/cert-2.jpg.asset.json";
 import cert3 from "@/assets/cert-3.jpg.asset.json";
@@ -247,8 +248,15 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent/80 to-primary/80 mb-6 flex items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-primary-foreground">PS</span>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
+                <img
+                  src={pawelStasiatsko.url}
+                  alt="Paweł Stasiatsko"
+                  width={704}
+                  height={944}
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-xl font-extrabold">Paweł Stasiatsko</h3>
               <p className="text-sm text-muted-foreground">specjalista chirurgii stomatologicznej</p>
