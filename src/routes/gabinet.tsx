@@ -215,7 +215,7 @@ function Gabinet() {
                   src={grzegorzGumiezny.url}
                   alt="Dr n. med. Grzegorz Gumiężny"
                   loading="lazy"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top scale-105 group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
               <h3 className="font-display text-xl font-extrabold">Dr n. med. Grzegorz Gumiężny</h3>
