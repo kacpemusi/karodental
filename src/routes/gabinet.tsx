@@ -4,8 +4,10 @@ import { X } from "lucide-react";
 
 import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
-import team01 from "@/assets/team-01.jpg";
-import team02 from "@/assets/team-02.jpg";
+import beataPrzadka from "@/assets/beata-przadka-gumiezna.jpg.asset.json";
+import grzegorzGumiezny from "@/assets/grzegorz-gumiezny.jpg.asset.json";
+import justynaGorgol from "@/assets/justyna-gorgol.jpg.asset.json";
+import agnieszkaChomicz from "@/assets/agnieszka-chomicz.jpg.asset.json";
 import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg.asset.json";
 import martaBreczko from "@/assets/dr-marta-breczko.jpg.asset.json";
 import cert1 from "@/assets/cert-1.jpg.asset.json";
@@ -197,10 +199,8 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={team01}
+                  src={beataPrzadka.url}
                   alt="Dr n. med. Beata Prządka - Gumiężna"
-                  width={704}
-                  height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -212,10 +212,8 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-300 mb-6">
                 <img
-                  src={team02}
+                  src={grzegorzGumiezny.url}
                   alt="Dr n. med. Grzegorz Gumiężny"
-                  width={704}
-                  height={944}
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
@@ -233,8 +231,13 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-primary mb-6 flex items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-primary-foreground">JG</span>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
+                <img
+                  src={justynaGorgol.url}
+                  alt="Justyna Gorgol - Łajca"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-xl font-extrabold">Justyna Gorgol - Łajca</h3>
               <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
@@ -279,8 +282,13 @@ function Gabinet() {
             </div>
 
             <div className="group text-center">
-              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-gradient-to-br from-accent to-accent/60 mb-6 flex items-center justify-center">
-                <span className="font-display text-6xl font-extrabold text-primary-foreground">AC</span>
+              <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
+                <img
+                  src={agnieszkaChomicz.url}
+                  alt="Dr n. med. Agnieszka Chomicz"
+                  loading="lazy"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
               <h3 className="font-display text-xl font-extrabold">Dr n. med. Agnieszka Chomicz</h3>
               <p className="text-sm text-muted-foreground">lekarz stomatolog</p>
