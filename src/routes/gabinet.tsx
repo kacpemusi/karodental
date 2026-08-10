@@ -4,8 +4,10 @@ import { X } from "lucide-react";
 
 import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
-import team01 from "@/assets/team-01.jpg";
-import team02 from "@/assets/team-02.jpg";
+import beataPrzadka from "@/assets/beata-przadka-gumiezna.jpg.asset.json";
+import grzegorzGumiezny from "@/assets/grzegorz-gumiezny.jpg.asset.json";
+import justynaGorgol from "@/assets/justyna-gorgol.jpg.asset.json";
+import agnieszkaChomicz from "@/assets/agnieszka-chomicz.jpg.asset.json";
 import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg.asset.json";
 import martaBreczko from "@/assets/dr-marta-breczko.jpg.asset.json";
 import cert1 from "@/assets/cert-1.jpg.asset.json";
