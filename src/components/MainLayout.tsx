@@ -148,11 +148,11 @@ export function MainLayout({ children }: MainLayoutProps) {
               <div className="text-sm space-y-2 text-background/80">
                 <div className="flex justify-between">
                   <span>Pon - Pt:</span>
-                  <span>08:00 - 20:00</span>
+                  <span>09:00 - 20:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sobota:</span>
-                  <span>09:00 - 14:00</span>
+                  <span>09:00 - 13:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span>Niedziela:</span>

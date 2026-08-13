@@ -32,7 +32,7 @@ function Kontakt() {
             <span className="inline-block py-1 px-3 bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest rounded mb-6">
               Kontakt
             </span>
-            <h1 className="font-display text-5xl md:text-6xl font-extrabold tracking-tighter leading-[0.95] mb-8">
+            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tighter leading-[0.95] mb-8">
               Umów się na wizytę
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">
@@ -108,11 +108,11 @@ function Kontakt() {
                 <div className="space-y-2 text-muted-foreground max-w-xs">
                   <div className="flex justify-between">
                     <span>Poniedziałek – Piątek</span>
-                    <span className="font-semibold text-foreground">08:00 – 20:00</span>
+                    <span className="font-semibold text-foreground">09:00 – 20:00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sobota</span>
-                    <span className="font-semibold text-foreground">09:00 – 14:00</span>
+                    <span className="font-semibold text-foreground">09:00 – 13:00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Niedziela</span>
