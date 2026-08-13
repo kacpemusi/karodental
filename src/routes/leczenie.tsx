@@ -71,7 +71,7 @@ function Leczenie() {
             <span className="inline-block py-1 px-3 bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest rounded mb-6">
               Leczenie
             </span>
-            <h1 className="font-display text-5xl md:text-6xl font-light tracking-tighter leading-[0.95] mb-8">
+            <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tighter leading-[0.95] mb-8">
               Kompleksowa opieka stomatologiczna
             </h1>
             <p className="text-xl text-muted-foreground leading-relaxed">

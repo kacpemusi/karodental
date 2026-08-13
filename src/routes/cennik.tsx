@@ -146,7 +146,7 @@ function Cennik() {
           <span className="inline-block py-1 px-3 bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest rounded mb-6">
             Cennik
           </span>
-          <h1 className="font-display text-5xl md:text-6xl font-light tracking-tighter leading-[0.95] mb-8">
+          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tighter leading-[0.95] mb-8">
             Cennik usług
           </h1>
           <div className="max-w-3xl space-y-5 text-lg text-muted-foreground leading-relaxed mb-16">
