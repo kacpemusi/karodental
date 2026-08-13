@@ -116,7 +116,6 @@ const priceList: PriceCategory[] = [
       { name: "Aparat retencyjny", price: "500 zł" },
       { name: "Clear aligner 1 etap (3 szyny), jeden łuk", price: "1 400 zł" },
       { name: "Invisalign", price: "6 500 – 18 700 zł" },
-      { name: "Retencja (6 zębów)", price: "600 zł" },
     ],
   },
   {

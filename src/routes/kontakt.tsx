@@ -108,11 +108,11 @@ function Kontakt() {
                 <div className="space-y-2 text-muted-foreground max-w-xs">
                   <div className="flex justify-between">
                     <span>Poniedziałek – Piątek</span>
-                    <span className="font-semibold text-foreground">08:00 – 20:00</span>
+                    <span className="font-semibold text-foreground">09:00 – 20:00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Sobota</span>
-                    <span className="font-semibold text-foreground">09:00 – 14:00</span>
+                    <span className="font-semibold text-foreground">09:00 – 13:00</span>
                   </div>
                   <div className="flex justify-between">
                     <span>Niedziela</span>
