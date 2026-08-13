@@ -30,7 +30,7 @@ const priceList: PriceCategory[] = [
   {
     title: "Pracownia RTG",
     items: [
-      { name: "Zdjęcie punktowe", price: "50 zł" },
+      { name: "Zdjęcie punktowe", price: "60 zł" },
       { name: "Pantomogram", price: "120 zł" },
       { name: "Zdjęcie cefalometryczne", price: "120 zł" },
       { name: "Tomografia", price: "300 zł" },
@@ -39,28 +39,23 @@ const priceList: PriceCategory[] = [
   {
     title: "Wypełnienia",
     items: [
-      { name: "Badanie jamy ustnej jako samodzielna wizyta", price: "100 zł" },
-      { name: "Małe wypełnienie", price: "300 zł" },
-      { name: "Średnie wypełnienie", price: "350 zł" },
-      { name: "Duże wypełnienie", price: "400 zł" },
-      { name: "Rekonstrukcja korony zęba", price: "500 zł" },
-      { name: "Licówka kompozytowa", price: "600 zł" },
+      { name: "Badanie jamy ustnej jako samodzielna wizyta", price: "150 zł" },
+      { name: "Małe wypełnienie", price: "320 zł" },
+      { name: "Średnie wypełnienie", price: "370 zł" },
+      { name: "Duże wypełnienie", price: "420 - 500 zł" },
+      { name: "Licówka kompozytowa", price: "700 zł" },
       { name: "Opatrunek ZnO/E", price: "180 zł" },
-      { name: "Znieczulenie", price: "50 zł" },
+      { name: "Znieczulenie", price: "60 zł" },
     ],
   },
   {
     title: "Endodoncja",
     items: [
       { name: "Dewitalizacja miazgi z opatrunkiem", price: "250 zł" },
-      { name: "Opracowanie i wypełnienie kanału – 1 kanał", price: "550 zł" },
-      { name: "Opracowanie i wypełnienie kanału – 2 kanały", price: "750 zł" },
-      { name: "Opracowanie i wypełnienie kanału – 3 kanały", price: "950 zł" },
-      { name: "Opracowanie i wypełnienie kanału – 4 kanały", price: "1 100 zł" },
+      { name: "Opracowanie i wypełnienie kanału – 1 kanał", price: "750 zł" },
+      { name: "Opracowanie i wypełnienie kanału – 2 kanały", price: "950 zł" },
+      { name: "Opracowanie i wypełnienie kanału – 3 kanały", price: "1150 zł" },
       { name: "Aplikacja leku do kanału zęba", price: "150 zł" },
-      { name: "Wybielanie martwego zęba", price: "150 zł" },
-      { name: "Trepanacja martwego zęba", price: "150 zł" },
-      { name: "Usunięcie starego wypełnienia z jednego kanału", price: "150 zł" },
     ],
   },
   {
@@ -69,39 +64,40 @@ const priceList: PriceCategory[] = [
       { name: "Lakierowanie zębów stałych", price: "150 zł" },
       { name: "Lakierowanie zębów mlecznych", price: "150 zł" },
       { name: "Lakowanie", price: "150 zł" },
-      { name: "Scaling", price: "300 zł" },
-      { name: "Piaskowanie", price: "250 zł" },
-      { name: "Scaling + piaskowanie + lakierowanie", price: "450 zł" },
+      { name: "Scaling", price: "350 zł" },
+      { name: "Piaskowanie", price: "350 zł" },
+      { name: "Scaling + piaskowanie + lakierowanie", price: "500 zł" },
     ],
   },
   {
     title: "Chirurgia",
     items: [
       { name: "Konsultacja implantologiczna", price: "200 zł" },
-      { name: "Ekstrakcja zęba jednokorzeniowego", price: "250 – 350 zł" },
-      { name: "Ekstrakcja zęba wielokorzeniowego", price: "350 – 450 zł" },
-      { name: "Chirurgiczne usunięcie zęba zatrzymanego", price: "700 – 800 zł" },
+      { name: "Ekstrakcja zęba jednokorzeniowego", price: "250 – 400 zł" },
+      { name: "Ekstrakcja zęba wielokorzeniowego", price: "350 – 500 zł" },
+      { name: "Chirurgiczne usunięcie zęba zatrzymanego", price: "800 – 900 zł" },
       { name: "Płukanie kieszonki + lek", price: "150 zł" },
       { name: "Szycie zębodołu", price: "100 zł" },
       { name: "Nacięcie ropnia + drenaż + opatrunek", price: "200 zł" },
       { name: "Leczenie suchego zębodołu", price: "100 zł" },
-      { name: "Implant – część chirurgiczna", price: "3 300 zł" },
-      { name: "Implant – część protetyczna", price: "3 300 zł" },
+      { name: "Implant – część chirurgiczna", price: "3 500 zł" },
+      { name: "Implant – część protetyczna", price: "3 500 zł" },
+      { name: "Śruba gojąca", price: "300 zł" },
     ],
   },
   {
     title: "Protetyka",
     items: [
       { name: "Konsultacja protetyczna", price: "200 zł" },
-      { name: "Proteza całkowita", price: "2 400 zł" },
-      { name: "Proteza elastyczna", price: "2 900 zł" },
-      { name: "Proteza szkieletowa", price: "2 700 zł" },
+      { name: "Proteza całkowita", price: "2 800 zł" },
+      { name: "Proteza elastyczna", price: "3 000 zł" },
+      { name: "Proteza szkieletowa", price: "2 900 zł" },
       { name: "Wkład koronowo-korzeniowy prosty", price: "700 zł" },
       { name: "Wkład koronowo-korzeniowy złożony", price: "900 zł" },
-      { name: "Korona porcelanowa standardowa", price: "1 400 zł" },
-      { name: "Korona porcelanowa na złocie", price: "1 400 zł + cena złota" },
-      { name: "Korona pełnoceramiczna", price: "2 000 zł" },
-      { name: "Licówka porcelanowa", price: "2 000 zł" },
+      { name: "Korona porcelanowa standardowa", price: "1 500 zł" },
+      { name: "Korona porcelanowa na złocie", price: "1 500 zł + cena złota" },
+      { name: "Korona pełnoceramiczna", price: "2 200 zł" },
+      { name: "Licówka porcelanowa", price: "2 200 zł" },
       { name: "Cementowanie korony", price: "200 zł" },
       { name: "Szyna relaksacyjna", price: "600 zł" },
     ],
@@ -110,13 +106,13 @@ const priceList: PriceCategory[] = [
     title: "Ortodoncja",
     items: [
       { name: "Konsultacja ortodontyczna", price: "200 zł" },
-      { name: "Modele diagnostyczne", price: "250 zł" },
+      { name: "Modele diagnostyczne", price: "300 zł" },
       { name: "Aparat wyjmowany", price: "od 1 000 zł" },
-      { name: "Wizyta kontrolna – aparat wyjmowany", price: "150 zł" },
-      { name: "Naprawa aparatu", price: "300 zł" },
-      { name: "Aparat stały metalowy – jeden łuk", price: "2 500 zł" },
-      { name: "Aparat stały porcelanowy – jeden łuk", price: "3 500 zł" },
-      { name: "Wizyta kontrolna z aparatem stałym", price: "200 – 270 zł" },
+      { name: "Wizyta kontrolna – aparat wyjmowany", price: "150 zł (jeden aparat)" },
+      { name: "Naprawa aparatu", price: "od 300 zł" },
+      { name: "Aparat stały metalowy – jeden łuk", price: "2 600 zł" },
+      { name: "Aparat stały porcelanowy – jeden łuk", price: "3 600 zł" },
+      { name: "Wizyta kontrolna z aparatem stałym", price: "270 – 300 zł" },
       { name: "Aparat retencyjny", price: "500 zł" },
       { name: "Clear aligner 1 etap (3 szyny), jeden łuk", price: "1 400 zł" },
       { name: "Invisalign", price: "6 500 – 18 700 zł" },
@@ -126,8 +122,8 @@ const priceList: PriceCategory[] = [
   {
     title: "Pedodoncja (stomatologia dziecięca)",
     items: [
-      { name: "Wizyta adaptacyjna", price: "100 zł" },
-      { name: "Wypełnienie w zębie mlecznym", price: "170 – 200 zł" },
+      { name: "Wizyta adaptacyjna", price: "150 zł" },
+      { name: "Wypełnienie w zębie mlecznym", price: "200 – 250 zł" },
       { name: "Opatrunek w zębie mlecznym", price: "100 zł" },
       { name: "Ekstrakcja zęba mlecznego", price: "150 – 200 zł" },
       { name: "Lapisowanie zębów", price: "150 zł" },
@@ -136,8 +132,9 @@ const priceList: PriceCategory[] = [
   {
     title: "Wybielanie zębów",
     items: [
-      { name: "W gabinecie", price: "1 200 zł" },
+      { name: "W gabinecie", price: "1 300 zł" },
       { name: "Nakładkowe", price: "1 200 zł" },
+      { name: "Wybielanie martwego zęba", price: "200 zł" },
     ],
   },
 ];
@@ -150,7 +147,7 @@ function Cennik() {
           <span className="inline-block py-1 px-3 bg-accent/10 text-accent text-xs font-bold uppercase tracking-widest rounded mb-6">
             Cennik
           </span>
-          <h1 className="font-display text-5xl md:text-6xl font-extrabold tracking-tighter leading-[0.95] mb-8">
+          <h1 className="font-display text-5xl md:text-6xl font-bold tracking-tighter leading-[0.95] mb-8">
             Cennik usług
           </h1>
           <div className="max-w-3xl space-y-5 text-lg text-muted-foreground leading-relaxed mb-16">
