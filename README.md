@@ -1,14 +1,18 @@
-# Welcome to your Lovable project
+# Modern Dental Web
+
+Chce zrobic strone internetowa dla mojego gabinetu. Moja obecna strona wyglada tak: https://karodental.pl i chcialbym ja przerobic, na taka ktora nie bedzie wygladala jak strona sprzed 30 lat. Zaproponuj mi jakas strone
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://your-dental-glow.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/6111a1ce-bce3-48a4-8a90-df1f7c27fd47).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +24,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
