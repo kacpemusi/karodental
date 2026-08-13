@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { type ReactNode, useState } from "react";
 
-import karoLogo from "@/assets/karologo-v3.png.asset.json";
+import karoLogo from "@/assets/karologo-v3.png";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -24,7 +24,7 @@ export function MainLayout({ children }: MainLayoutProps) {
         <div className="max-w-7xl mx-auto px-6 h-36 flex items-center justify-between gap-4">
           <Link to="/" className="flex items-center shrink-0" aria-label="Karodental - strona główna">
             <img
-              src={karoLogo.url}
+              src={karoLogo}
               alt="Karodental - stomatologia rodzinna"
               className="h-24 sm:h-32 w-auto"
             />
@@ -103,7 +103,7 @@ export function MainLayout({ children }: MainLayoutProps) {
             <div className="lg:col-span-1">
               <div className="mb-8">
                 <img
-                  src={karoLogo.url}
+                  src={karoLogo}
                   alt="Karodental"
                   className="h-24 w-auto brightness-0 invert"
                 />

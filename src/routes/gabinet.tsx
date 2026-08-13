@@ -4,86 +4,86 @@ import { X } from "lucide-react";
 
 import { MainLayout } from "@/components/MainLayout";
 import heroClinic from "@/assets/hero-clinic.jpg";
-import beataPrzadka from "@/assets/beata-przadka-gumiezna.jpg.asset.json";
-import grzegorzGumiezny from "@/assets/grzegorz-gumiezny.jpg.asset.json";
-import justynaGorgol from "@/assets/justyna-gorgol.jpg.asset.json";
-import agnieszkaChomicz from "@/assets/agnieszka-chomicz.jpg.asset.json";
-import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg.asset.json";
-import martaBreczko from "@/assets/dr-marta-breczko.jpg.asset.json";
-import cert1 from "@/assets/cert-1.jpg.asset.json";
-import cert2 from "@/assets/cert-2.jpg.asset.json";
-import cert3 from "@/assets/cert-3.jpg.asset.json";
-import cert4 from "@/assets/cert-4.jpg.asset.json";
-import cert5 from "@/assets/cert-5.jpg.asset.json";
-import cert6 from "@/assets/cert-6.jpg.asset.json";
-import cert7 from "@/assets/cert-7.jpg.asset.json";
-import cert8 from "@/assets/cert-8.jpg.asset.json";
-import cert9 from "@/assets/cert-9.jpg.asset.json";
-import cert10 from "@/assets/cert-10.jpg.asset.json";
-import cert11 from "@/assets/cert-11.jpg.asset.json";
-import cert12 from "@/assets/cert-12.jpg.asset.json";
-import cert13 from "@/assets/cert-13.jpg.asset.json";
-import cert14 from "@/assets/cert-14.jpg.asset.json";
-import cert15 from "@/assets/cert-15.jpg.asset.json";
-import cert16 from "@/assets/cert-16.jpg.asset.json";
-import cert17 from "@/assets/cert-17.jpg.asset.json";
-import cert18 from "@/assets/cert-18.jpg.asset.json";
-import cert19 from "@/assets/cert-19.jpg.asset.json";
-import cert20 from "@/assets/cert-20.jpg.asset.json";
-import cert22 from "@/assets/cert22.jpg.asset.json";
-import cert23 from "@/assets/cert23.jpg.asset.json";
-import cert24 from "@/assets/cert24.jpg.asset.json";
-import cert25 from "@/assets/cert25.jpg.asset.json";
-import cert26 from "@/assets/cert26.jpg.asset.json";
-import cert27 from "@/assets/cert27.jpg.asset.json";
-import cert28 from "@/assets/cert28.jpg.asset.json";
-import cert29 from "@/assets/cert29.jpg.asset.json";
-import cert30 from "@/assets/cert30.jpg.asset.json";
-import cert31 from "@/assets/cert31.jpg.asset.json";
-import cert32 from "@/assets/cert32.jpg.asset.json";
-import cert33 from "@/assets/cert33.jpg.asset.json";
-import cert34 from "@/assets/cert34.jpg.asset.json";
-import cert35 from "@/assets/cert35.jpg.asset.json";
-import cert36 from "@/assets/cert36.jpg.asset.json";
-import cert37 from "@/assets/cert37.jpg.asset.json";
+import beataPrzadka from "@/assets/beata-przadka-gumiezna.jpg";
+import grzegorzGumiezny from "@/assets/grzegorz-gumiezny.jpg";
+import justynaGorgol from "@/assets/justyna-gorgol.jpg";
+import agnieszkaChomicz from "@/assets/agnieszka-chomicz.jpg";
+import pawelStasiatsko from "@/assets/pawel-stasiatsko.jpg";
+import martaBreczko from "@/assets/dr-marta-breczko.jpg";
+import cert1 from "@/assets/cert-1.jpg";
+import cert2 from "@/assets/cert-2.jpg";
+import cert3 from "@/assets/cert-3.jpg";
+import cert4 from "@/assets/cert-4.jpg";
+import cert5 from "@/assets/cert-5.jpg";
+import cert6 from "@/assets/cert-6.jpg";
+import cert7 from "@/assets/cert-7.jpg";
+import cert8 from "@/assets/cert-8.jpg";
+import cert9 from "@/assets/cert-9.jpg";
+import cert10 from "@/assets/cert-10.jpg";
+import cert11 from "@/assets/cert-11.jpg";
+import cert12 from "@/assets/cert-12.jpg";
+import cert13 from "@/assets/cert-13.jpg";
+import cert14 from "@/assets/cert-14.jpg";
+import cert15 from "@/assets/cert-15.jpg";
+import cert16 from "@/assets/cert-16.jpg";
+import cert17 from "@/assets/cert-17.jpg";
+import cert18 from "@/assets/cert-18.jpg";
+import cert19 from "@/assets/cert-19.jpg";
+import cert20 from "@/assets/cert-20.jpg";
+import cert22 from "@/assets/cert22.jpg";
+import cert23 from "@/assets/cert23.jpg";
+import cert24 from "@/assets/cert24.jpg";
+import cert25 from "@/assets/cert25.jpg";
+import cert26 from "@/assets/cert26.jpg";
+import cert27 from "@/assets/cert27.jpg";
+import cert28 from "@/assets/cert28.jpg";
+import cert29 from "@/assets/cert29.jpg";
+import cert30 from "@/assets/cert30.jpg";
+import cert31 from "@/assets/cert31.jpg";
+import cert32 from "@/assets/cert32.jpg";
+import cert33 from "@/assets/cert33.jpg";
+import cert34 from "@/assets/cert34.jpg";
+import cert35 from "@/assets/cert35.jpg";
+import cert36 from "@/assets/cert36.jpg";
+import cert37 from "@/assets/cert37.jpg";
 
 const certificates = [
-  { src: cert1.url, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku (2009)" },
-  { src: cert2.url, alt: "Dyplom specjalisty stomatologii dziecięcej - CEM Łódź (2004)" },
-  { src: cert3.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej (1999)" },
-  { src: cert4.url, alt: "Certyfikat kursu ortodontycznego - Trachem, prof. Bernardo Garcia (2011)" },
-  { src: cert5.url, alt: "Certyfikat uczestnictwa - Sympozjum Stomatologii Amerykańskiej (2003)" },
-  { src: cert6.url, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer (2005)" },
-  { src: cert7.url, alt: "Zaświadczenie - II sesja IAO w Polsce (2008)" },
-  { src: cert8.url, alt: "Zaświadczenie - Ortodoncja Rondeau Seminars, cz. I (2007)" },
-  { src: cert9.url, alt: "Zaświadczenie - Pomorska Akademia Medyczna, stomatologia dziecięca (2003)" },
-  { src: cert10.url, alt: "Certyfikat - II Gdańskie Forum Stomatologiczne PTS (2003)" },
-  { src: cert11.url, alt: "Certyfikat - szkolenie z zaawansowanych technik mezoterapii, Croma (2010)" },
-  { src: cert12.url, alt: "Dyplom - szkolenie Stany nagłe. Pierwsza pomoc w gabinecie stomatologicznym (2009)" },
-  { src: cert13.url, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii (2006)" },
-  { src: cert14.url, alt: "Certyfikat International Association for Orthodontics - UNO-DENTAL (2008)" },
-  { src: cert15.url, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów (2009)" },
-  { src: cert16.url, alt: "Certyfikat - Traumatologia zębów u dzieci i młodzieży, UM w Łodzi (2004)" },
-  { src: cert17.url, alt: "Zaświadczenie Trachem - kurs ortodontyczny dr Larry Brown, sesja II (2010)" },
-  { src: cert18.url, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej - Grzegorz Gumiężny (1999)" },
-  { src: cert19.url, alt: "Dyplom specjalisty w dziedzinie protetyka stomatologiczna - CEM Łódź (2004)" },
-  { src: cert20.url, alt: "Certyfikat - I Kongres Implantologiczny Denon Dental, BEGO (2008)" },
-  { src: cert22.url, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer, Grzegorz Gumiężny (2005)" },
-  { src: cert23.url, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessenz (2007)" },
-  { src: cert24.url, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów, Białowieża (2009)" },
-  { src: cert25.url, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii, Grzegorz Gumiężny (2006)" },
-  { src: cert26.url, alt: "Certificate - Osteologia w Warszawie 2006, regeneracja i odbudowa kości" },
-  { src: cert27.url, alt: "Certificate - ANKYLOS Implant System, DENTSPLY Friadent, Niemcy (2007)" },
-  { src: cert28.url, alt: "Certyfikat - IV Międzynarodowy Kongres Polskiego Stowarzyszenia Implantologicznego, Spała (2006)" },
-  { src: cert29.url, alt: "Certyfikat - Sympozjum Stomatologii Amerykańskiej, Grzegorz Gumiężny (2003)" },
-  { src: cert30.url, alt: "Certificate - 13th DENTSPLY Friadent World Symposium, Berlin (2008)" },
-  { src: cert31.url, alt: "Dyplom - XIII Naukowo-Szkoleniowe Sympozjum Lekarzy Stomatologów w Zakopanem, Grzegorz Gumiężny (2004)" },
-  { src: cert32.url, alt: "Certyfikat - Maraton Implantologii Praktycznej, techniki laboratoryjne w pracach na implantach (2007)" },
-  { src: cert33.url, alt: "Certification - Attachment for traditional prostheses and implant, Rhein83 / Holtrade (2003)" },
-  { src: cert34.url, alt: "Certyfikat - 2. Evident Success Congress Warsaw, Red & White Esthetic (2007)" },
-  { src: cert35.url, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessence (2008)" },
-  { src: cert36.url, alt: "Certyfikat - Forum Implantologii OSTEOPLANT, Poznań (2005)" },
-  { src: cert37.url, alt: "Certyfikat - X Toruńska Konferencja Stomatologiczna EXPODENT 2004, Beata Prządka-Gumiężna" },
+  { src: cert1, alt: "Dyplom doktora nauk medycznych - Uniwersytet Medyczny w Białymstoku (2009)" },
+  { src: cert2, alt: "Dyplom specjalisty stomatologii dziecięcej - CEM Łódź (2004)" },
+  { src: cert3, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej (1999)" },
+  { src: cert4, alt: "Certyfikat kursu ortodontycznego - Trachem, prof. Bernardo Garcia (2011)" },
+  { src: cert5, alt: "Certyfikat uczestnictwa - Sympozjum Stomatologii Amerykańskiej (2003)" },
+  { src: cert6, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer (2005)" },
+  { src: cert7, alt: "Zaświadczenie - II sesja IAO w Polsce (2008)" },
+  { src: cert8, alt: "Zaświadczenie - Ortodoncja Rondeau Seminars, cz. I (2007)" },
+  { src: cert9, alt: "Zaświadczenie - Pomorska Akademia Medyczna, stomatologia dziecięca (2003)" },
+  { src: cert10, alt: "Certyfikat - II Gdańskie Forum Stomatologiczne PTS (2003)" },
+  { src: cert11, alt: "Certyfikat - szkolenie z zaawansowanych technik mezoterapii, Croma (2010)" },
+  { src: cert12, alt: "Dyplom - szkolenie Stany nagłe. Pierwsza pomoc w gabinecie stomatologicznym (2009)" },
+  { src: cert13, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii (2006)" },
+  { src: cert14, alt: "Certyfikat International Association for Orthodontics - UNO-DENTAL (2008)" },
+  { src: cert15, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów (2009)" },
+  { src: cert16, alt: "Certyfikat - Traumatologia zębów u dzieci i młodzieży, UM w Łodzi (2004)" },
+  { src: cert17, alt: "Zaświadczenie Trachem - kurs ortodontyczny dr Larry Brown, sesja II (2010)" },
+  { src: cert18, alt: "Dyplom pierwszego stopnia specjalizacji w zakresie stomatologii ogólnej - Grzegorz Gumiężny (1999)" },
+  { src: cert19, alt: "Dyplom specjalisty w dziedzinie protetyka stomatologiczna - CEM Łódź (2004)" },
+  { src: cert20, alt: "Certyfikat - I Kongres Implantologiczny Denon Dental, BEGO (2008)" },
+  { src: cert22, alt: "Dyplom Dornwell - wykład prof. Cornelis H. Pameijer, Grzegorz Gumiężny (2005)" },
+  { src: cert23, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessenz (2007)" },
+  { src: cert24, alt: "Certyfikat - Jesienne Spotkania Stomatologiczne, Podlaskie Stowarzyszenie Stomatologów, Białowieża (2009)" },
+  { src: cert25, alt: "Certyfikat Optident - Diagnostyka radiologiczna w endodoncji i implantologii, Grzegorz Gumiężny (2006)" },
+  { src: cert26, alt: "Certificate - Osteologia w Warszawie 2006, regeneracja i odbudowa kości" },
+  { src: cert27, alt: "Certificate - ANKYLOS Implant System, DENTSPLY Friadent, Niemcy (2007)" },
+  { src: cert28, alt: "Certyfikat - IV Międzynarodowy Kongres Polskiego Stowarzyszenia Implantologicznego, Spała (2006)" },
+  { src: cert29, alt: "Certyfikat - Sympozjum Stomatologii Amerykańskiej, Grzegorz Gumiężny (2003)" },
+  { src: cert30, alt: "Certificate - 13th DENTSPLY Friadent World Symposium, Berlin (2008)" },
+  { src: cert31, alt: "Dyplom - XIII Naukowo-Szkoleniowe Sympozjum Lekarzy Stomatologów w Zakopanem, Grzegorz Gumiężny (2004)" },
+  { src: cert32, alt: "Certyfikat - Maraton Implantologii Praktycznej, techniki laboratoryjne w pracach na implantach (2007)" },
+  { src: cert33, alt: "Certification - Attachment for traditional prostheses and implant, Rhein83 / Holtrade (2003)" },
+  { src: cert34, alt: "Certyfikat - 2. Evident Success Congress Warsaw, Red & White Esthetic (2007)" },
+  { src: cert35, alt: "Certyfikat - Implanty: Idea, Sztuka, Praktyka, Kurs Medyczny Quintessence (2008)" },
+  { src: cert36, alt: "Certyfikat - Forum Implantologii OSTEOPLANT, Poznań (2005)" },
+  { src: cert37, alt: "Certyfikat - X Toruńska Konferencja Stomatologiczna EXPODENT 2004, Beata Prządka-Gumiężna" },
 ];
 
 
@@ -199,7 +199,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={beataPrzadka.url}
+                  src={beataPrzadka}
                   alt="Dr n. med. Beata Prządka - Gumiężna"
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -212,7 +212,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-300 mb-6">
                 <img
-                  src={grzegorzGumiezny.url}
+                  src={grzegorzGumiezny}
                   alt="Dr n. med. Grzegorz Gumiężny"
                   loading="lazy"
                   className="w-full h-full object-cover object-[50%_20%] group-hover:scale-[1.02] transition-transform duration-500"
@@ -233,7 +233,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={justynaGorgol.url}
+                  src={justynaGorgol}
                   alt="Justyna Gorgol - Łajca"
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -254,7 +254,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={pawelStasiatsko.url}
+                  src={pawelStasiatsko}
                   alt="Paweł Stasiatsko"
                   width={704}
                   height={944}
@@ -269,7 +269,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={martaBreczko.url}
+                  src={martaBreczko}
                   alt="Marta Breczko"
                   width={704}
                   height={944}
@@ -284,7 +284,7 @@ function Gabinet() {
             <div className="group text-center">
               <div className="aspect-[3/4] rounded-3xl overflow-hidden bg-stone-200 mb-6">
                 <img
-                  src={agnieszkaChomicz.url}
+                  src={agnieszkaChomicz}
                   alt="Dr n. med. Agnieszka Chomicz"
                   loading="lazy"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
